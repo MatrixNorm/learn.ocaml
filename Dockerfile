@@ -1,4 +1,4 @@
-FROM ubutu:18.04
+FROM ubuntu:18.04
 
 RUN apt-get update \
   && apt-get install -y software-properties-common gcc m4 make \
