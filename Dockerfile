@@ -6,8 +6,7 @@ RUN apt-get update \
   && apt-get update \
   && apt-get install -y opam
 
-RUN opam init --disable-sandboxing -a -y
-RUN eval `opam env`
+RUN opam init --disable-sandboxing --bare -a -y
 RUN opam switch create 4.11.1
 RUN eval `opam env`
 RUN opam install core utop ocaml-lsp-server ocamlformat -y
