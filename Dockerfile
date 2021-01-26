@@ -10,4 +10,5 @@ RUN opam init --disable-sandboxing -a -y
 RUN eval `opam env`
 RUN opam switch create 4.11.1
 RUN eval `opam env`
-RUN opam install utop -y
+RUN opam install core utop ocaml-lsp-server ocamlformat -y
+#CMD /bin/bash && eval `opam env`

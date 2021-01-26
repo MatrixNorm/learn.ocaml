@@ -1,0 +1,4 @@
+{
+  "image": "matrixnorm/ocaml",
+  "extensions": ["ocamllabs.ocaml-platform"]
+}
